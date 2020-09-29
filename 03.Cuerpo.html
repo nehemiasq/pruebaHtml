@@ -1,0 +1,204 @@
+<!doctype html>
+
+
+<html>
+
+<head>
+		<meta charset="utf-8">
+
+		<meta name="author" content="Tutoriales a tu alcance">
+
+		<meta name="description" content="Acá se pone la descripción del sitio">
+
+		<meta name="keywords" content="tutoriales, html, desarrollo web"> <!--en el content, van los datos de como busca internet-->
+
+		<title>Estructura de la cabecera</title>
+
+		<link rel="icon" href="E:\02_CURSOS\01_SISTEMAS\HTML 5\img\icono.png"></link> <!--rel = que relacion tiene, href= vincular la imagen-->
+
+
+</head>
+
+<body>
+
+	<center><h3>FORMULARIO</h3><!--etiqueta center para centrar-->
+	<form>
+		<label for="texto">Entrada de texto</label><!--etiqueta label,-->
+		<input id="texto" type="text" placeholder="Entrada de texto" value="" required> <!--input etiqueta de entrada, value, donde se ingreasa el dato, required pide no dejar vacio el campo-->
+
+		<br>
+		<br>
+
+		<label for="Correo">Entrada de correo</label>
+		<input id="Correo" type="email" placeholder="Entrada de correo" value="" required>
+
+		<br>
+		<br>
+
+		<label for="pass">Entrada de contraseña</label>
+		<input id="pass" type="password" placeholder="Entrada de contraseña" value="" required>
+
+
+		<br>
+		<br>
+
+		<input type="number" value="1" min="0" max="3">
+
+		<br>
+		<br>
+
+		<select><!--etiqueta de selección-->
+			<option>Opción 1</option>
+			<option>Opción 2</option>
+			<option>Opción 3</option>
+
+		</select>
+
+		<br>
+		<br>
+
+		<input type="checkbox" id="rojo"><label for="rojo">Rojo</label><!--el checkbox es para elegir varias opciones-->
+		<input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+		<input type="checkbox" id="verde"><label for="verde">Verde</label>
+
+		<br>
+		<br>
+
+		<input type="radio" id="blanco" name="radio"><label for="rojo">blanco</label><!--el radio solo elige una opción-->
+		<input type="radio" id="negro" name="radio"><label for="rojo">negro</label>
+
+
+		<br>
+		<br>
+
+		<input type="submit" value="Enviar formulario">
+
+
+
+
+	</form><!--etiqueta form para crear formularios-->
+	</center>
+
+
+	<header>
+			<div id="logotipo">Logotipo</div> <!--etiqueta div, para hacer divisiones-->
+				<!--se puede poner id para diferenciar unas de otras y escribir todo en minusculas-->
+
+	</header><!--cabezote-->
+		
+	<nav>barra de navegación</nav><!--barra de navegación-->
+		
+	<section>Sección principal</section>
+
+	<aside>
+		<div class="noticias">Noticia 1</div>
+		<div class="noticias">Noticia 2</div>
+		<div class="noticias">Noticia 3</div>
+
+
+	</aside> <!--identificar columnas-->
+		
+	<article>escribir articulos</article> <!--escribir articulos-->
+		
+	<h1>Título</h1> <!--etiqueta para escribir titulos, en base a tamaños según el número-->
+	<h2>Título</h2>
+	<h3>Título</h3>
+	<h4>Título</h4>
+	<h5>Título</h5>
+	<h6>Título</h6>
+
+	<p>Esto es un <b>párrafo</b>, <br>esto es otro pàrrafo</p> 
+	<hr> <!--etiqueta hr, pone linea a la pagina-->
+	<a href="#">Vinculo</a> <!--etiqueta a, hace vinculo-->
+	<!--etiqueta "b" pone en negrito la palabra-->
+	<!--etiqueta "br" no le dá un salto de línea-->
+	 <!--etiqueta para escribir textos-->
+
+	 <figure><!--etiqueta especial para imagenes que se vean organizadas-->
+	 <img src="img/imagen.jpg"> <!--por ser etiqueta simple de imagen, solo la cerramos sin el /-->
+	</figure>
+	<figcaption>etiqueta para poner pie de pagina a la imagen</figcaption>
+
+
+	<ol> <!--etiqueta ol para conjunto de listas enumeradas-->
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avión</li>
+
+	</ol>
+
+	<ul> <!--etiqueta ul para conjunto de listas con viñetas-->
+		<li>Carro</li>
+		<li>Barco</li>
+		<li>Avión</li>
+	</ul>
+
+	<table border="1"> <!--border indica el grosor de la linea de la tabla-->
+		
+		<thead><!--etiqueta thead, donde van los titulos de la tabla-->
+		<tr> <!--tr es para filas-->
+			<th>MES</th> <!--th es para columnas-->
+			<th>AHORRO</th>
+		</tr> 
+		</thead>
+
+		<tbody><!--etiqueta tbody que encierra cada una de las filas-->
+		<tr> <!--tr es para filas-->
+			<td>Enero</td> <!--td en las columnas se escriben con esta etiqueta-->
+			<td>$100</td>
+		</tr> 
+
+		<tr> <!--tr es para filas-->
+			<td>Febrero</td> <!--las columnas en el curso se escriben con td-->
+			<td>$200</td>
+		</tr> 
+	</tbody>
+
+	</table>
+
+	<h1>Resultado del examen</h1>
+	<p>Carlos: <meter value="94" min="0" max="100" high="96"></meter></p> <!--meter, indicador valores -->
+	<p>Andrés: <meter value="60" min="0" max="100" high="96"></meter> </p>
+	<p>Ana:    <meter value="85" min="0" max="100" high="96"></meter></p>
+	<p>Pedro:  <meter value="45" min="0" max="100" high="90"></meter></p>
+
+	<h2>Resultado de ventas</h2>
+	<p>Enero: <progress value="94" min="0" max="100"></progress></p> <!--progress indicador de valores otro diseño, en otros navegadores, zafari o app, no se lee meter, por eso se usa progress-->
+	<p>Febrero: <progress value="60" min="0" max="100"></progress></p>
+	<p>Marzo: <progress value="85" min="0" max="100"></progress></p>
+	<p>Abril: <progress value="45" min="0" max="100"></progress></p>
+
+
+	<audio controls loop preload="auto"><!--diferentes archivos de audio-->
+		
+		<!--Ogg VORBIS .ogg-->
+		<!--MP3 .mp3-->
+		<!--WAV .wav-->
+		<!--ACC .m4a, .mb4, .mp4, .acc-->
+
+		<source src="audio/audio.m4a" type="audio/mp4">
+		<source src="audio/audio.mp3" type="audio/mp3">
+		<source src="audio/audio.ogg" type="audio/ogg">
+		</audio>
+
+		<video controls loop width="500" heigh="200">
+			
+		<!--THEORA OGG .ogg-->
+		<!--MP4 .mp4-->
+		<!--WEBM .webm-->
+
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.ogv" type="video/ogg">
+			<source src="video/video.webm" type="video/webm">
+
+		</video>
+
+
+		<iframe width="500" heigh="288" src="https://www.youtube.com/embed/1-WHJUCMnRQ" frameborder="0" allowfullscreen> </iframe>
+	
+
+	<footer>Este es el pie de pagina</footer> <!--etiqueta para pie de pagina-->
+
+</body>
+
+</html>
